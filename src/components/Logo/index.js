@@ -1,16 +1,25 @@
 import logo from '../../img/logo.svg';
-import './style.css'
+import styled from 'styled-components';
+
+const LogoStyle = styled.div`
+  display: flex;
+  font-size: 30px;
+`
+
+const LogoImgStyle = styled.img`
+  margin-right: 10px;
+`
 
 function Logo() {
   return (
-    <div className='logo'>
-      <img
+    <LogoStyle>
+      <LogoImgStyle
         src={logo}
         className='App-logo'
         alt='logo'
       />
       <p><strong>Lopes</strong>Books</p>
-    </div>
+    </LogoStyle>
   )
 };
 
